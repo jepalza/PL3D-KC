@@ -12,10 +12,9 @@ REM ---------------------------------------------------
 REM ----------------  compilar OBJ --------------------
 REM ---------------------------------------------------
 
-REM **** dejar el orden 'mingw32,SDLmain,SDL' por que salen errores tipo 'OutOfMemory' ****
 REM -static-libgcc añadiendo esto, evitamos que pida la DLL 'libgcc_s_dw2-1.dll' 
 REM -static-libstdc++ y con esto, la 'libstdc++-6.dll'
-REM el EXE pasa a 'pesar' el triple, pero ya no depende de DLL externas
+REM el EXE pasa a 'pesar' mas, pero ya no depende de DLL externas
 
 set OPTS=-O3 -w
 set INCS=-I.
@@ -55,8 +54,4 @@ GCC ^
   %LIBS% ^
   -o .\exe\ejecutable.exe ^
      2>>_resultado.txt
-REM para DLL, poner '-s -shared' tras el '.EXE' (y cambiar .EXE pot .DLL)
-REM 
-REM para LIB, cambiar GCC/G++ por 'ar rcs' (minusculas) al linkar y poner libnombre.a en vez de .EXE
-REM ademas, mover la linea del nombre de la LIB arriba, tras el AR como primer comando
-REM y eliminar las variables de entorno LIBS y DLIB por que la libreria no los usa al linkar
+

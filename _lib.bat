@@ -1,9 +1,8 @@
 REM ---------------------------------------------------
-REM --------------  borrar EXE y OBJ ------------------
+REM --------------  borrar LIB y OBJ ------------------
 REM ---------------------------------------------------
-md exe
 md obj
-del exe\ejecutable.exe
+del *.a
 del /s *.o
 del _resultado.txt
 
