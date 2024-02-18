@@ -183,7 +183,7 @@ vid_open(char *title, int width, int height, int scale, int flags)
 	style = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX;
 
 	if (!cret) {
-	    SetProcessDPIAware();
+	    // jepalza anulado SetProcessDPIAware();
 		w.cbSize = sizeof(w);
 		w.style = CS_OWNDC | CS_HREDRAW | CS_VREDRAW |
 		        CS_BYTEALIGNCLIENT | CS_BYTEALIGNWINDOW;
@@ -210,7 +210,7 @@ vid_open(char *title, int width, int height, int scale, int flags)
 	r.top = 0;
 	r.right = dw;
 	r.bottom = dh;
-	AdjustWindowRectExForDpi(&r, style, 0, 0, GetDpiForWindow(FWi_wnd));
+	// jepalza anulado AdjustWindowRectExForDpi(&r, style, 0, 0, GetDpiForWindow(FWi_wnd));
 	wnd_w = r.right - r.left;
 	wnd_h = r.bottom - r.top;
 	SetWindowPos(FWi_wnd, HWND_TOP, 0, 0, wnd_w, wnd_h,
