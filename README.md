@@ -69,13 +69,15 @@ Discord: https://discord.gg/hdYctSmyQJ
 itch.io: https://kingscrook.itch.io/kings-crook
 
 
+
+
 Version con funciones añadidas para poder asignar variables internas desde FreeBasic:
 
-  void PL_Set_Fov( int valor);
+     void PL_Set_Fov( int valor);
   
-  void PL_Set_Raster_Mode( int valor);
+     void PL_Set_Raster_Mode( int valor);
   
-  void PL_Set_Cull_Mode( int valor);
+     void PL_Set_Cull_Mode( int valor);
   
-  void PL_Set_Cur_Tex(struct PL_TEX *tex); 
+     void PL_Set_Cur_Tex(struct PL_TEX *tex); 
   
