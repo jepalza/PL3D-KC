@@ -9,6 +9,8 @@
  * This software is released into the public domain.
  */
 /*****************************************************************************/
+// jepalza:
+//  eliminadas llamadas propias de MSVC que en GCC no son necesarias
 
 #include "fw_priv.h"
 
