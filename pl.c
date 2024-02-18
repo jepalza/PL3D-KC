@@ -9,6 +9,8 @@
  * This software is released into the public domain.
  */
 /*****************************************************************************/
+// Jepalza: 
+//   llamadas para asignar valores a variables internas desde FreeBasic
 
 #include "pl.h"
 
