@@ -90,6 +90,12 @@ extern struct PL_TEX *PL_cur_tex;
 extern int PL_raster_mode; /* PL_FLAT or PL_TEXTURED */
 extern int PL_cull_mode;
 
+// jepalza, una manera de controlar las variables internas
+extern void PL_Set_Fov( int valor);
+extern void PL_Set_Raster_Mode( int valor);
+extern void PL_Set_Cull_Mode( int valor);
+extern void PL_Set_Cur_Tex(struct PL_TEX *tex); //jepalza, para asignar la variable TEX externamente desde FB
+
 struct PL_POLY {
     struct PL_TEX *tex;
     

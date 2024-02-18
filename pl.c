@@ -29,6 +29,13 @@ int PL_fov          = 9;
 int PL_raster_mode  = PL_FLAT;
 int PL_cull_mode    = PL_CULL_BACK;
 
+// jepalza, necesarias para asignar las variables "extern" que FreeBasic no puede acceder
+void PL_Set_Fov( int valor) { PL_fov=valor; }
+void PL_Set_Raster_Mode( int valor) { PL_raster_mode=valor; }
+void PL_Set_Cull_Mode( int valor) { PL_cull_mode=valor; }
+void PL_Set_Cur_Tex(struct PL_TEX *tex) { PL_cur_tex=tex; }
+// ---
+
 static int tmp_vertices[PL_MAX_OBJ_V];
 
 static void
